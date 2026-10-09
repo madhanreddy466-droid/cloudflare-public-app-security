@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cloudflare public application security demonstration">
+  <title>Public Application Security</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fb;
+      color: #1f2937;
+    }
+
+    header {
+      background: #173b70;
+      color: white;
+      padding: 24px 16px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 32px auto;
+      padding: 0 18px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px #0000000d;
+    }
+
+    h1, h2 { margin-top: 0; }
+
+    .status {
+      color: #137333;
+      font-weight: bold;
+    }
+
+    a {
+      display: inline-block;
+      color: #174ea6;
+      margin: 8px 12px 8px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Public Application Security</h1>
+    <p>Cloudflare WAF and Security Policy Demonstration</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Application Overview</h2>
+      <p class="status">Application status: Online</p>
+      <p>
+        This public website demonstrates how edge security policies
+        can filter suspicious HTTP requests before they reach an
+        application.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Security Policy Tests</h2>
+      <p>Use these links to test your configured rules.</p>
+
+      <a href="/wp-admin">Admin-path challenge test</a>
+      <a href="/security-demo">Security demo path</a>
+      <a href="/">Return to homepage</a>
+    </section>
+
+    <section class="card">
+      <h2>Security Features</h2>
+      <ul>
+        <li>Web Application Firewall rules</li>
+        <li>Suspicious request blocking</li>
+        <li>Rate limiting</li>
+        <li>DDoS protection</li>
+        <li>Security event monitoring</li>
+      </ul>
+      <p>
+        These are the security features planned for this project.
+        Their actual protection status must be verified in Cloudflare.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Cloudflare Public Application Security Project
+  </footer>
+</body>
+</html>
